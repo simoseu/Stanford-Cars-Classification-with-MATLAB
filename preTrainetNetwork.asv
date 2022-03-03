@@ -44,7 +44,7 @@ layer = 'pool5'; % resnet-18 and resnet-101
 
 % Feature extraction 
 % If you are using VGG16 probably need to run activations with cpu or set
-% 'MiniBatchSize' lower than 128 (default value)
+% 'MiniBatchSize' to a 
 featuresTrain = activations(net,augimdsTrain,layer,'OutputAs','rows');
 featuresTest = activations(net,augimdsTest,layer,'OutputAs','rows');
 

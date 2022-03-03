@@ -11,9 +11,6 @@ imds.Labels = categorical([annotations(:).class]);
 net = resnet18;
 % net = resnet50;
 % net = resnet101;
-% net = vgg16;
-% net = alexnet;
-% net = inceptionresnetv2;
 
 % Input size of the net
 inputSize = net.Layers(1).InputSize;
